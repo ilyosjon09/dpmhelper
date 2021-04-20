@@ -65,7 +65,7 @@
                     <td class="border-b p-2">{{ $pinfl->birth_date }}</td>
                     <td class="border-b p-2">{{ str_replace('АНДИЖОН ВИЛОЯТИ ','',$pinfl->birth_place) }}</td>
                     <td class="border-b w-8 p-2 text-center">
-                        <form action="{{url('/toggle-attach')}}" method="POST">
+                        <form action="{{route('toggle-attach')}}" method="POST">
                             @csrf
                             @if($pinfl->attached)
                             <input type="hidden" name="id" value="{{ $pinfl->id }}">

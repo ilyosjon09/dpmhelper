@@ -3805,7 +3805,7 @@ __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 __webpack_require__.e(/*! AMD require */ "node_modules_pikaday_pikaday_js").then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! pikaday */ "./node_modules/pikaday/pikaday.js")]; (function (Pikaday) {
   var picker = new Pikaday({
     field: document.getElementById('birth_date'),
-    format: "DD.MM.YYYY"
+    format: 'DD.MM.YYYY'
   });
 }).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}).catch(__webpack_require__.oe);
 

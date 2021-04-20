@@ -19,6 +19,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::get('/', [PinflController::class, 'index'])->name('main');
-Route::post('/toggle-attach', [PinflController::class, 'toggleAttached']);
+Route::post('/', [PinflController::class, 'toggleAttached'])->name('toggle-attach');
 // Route::get('/', [PinflController::class, 'filter']);
 require __DIR__.'/auth.php';

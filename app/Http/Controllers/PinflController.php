@@ -86,6 +86,6 @@ class PinflController extends Controller
         $pinfl->attached = $request->input('attached');
         $pinfl->save();
 
-        return redirect('/');
+        return redirect()->back();
     }
 }
