@@ -21,6 +21,7 @@
         "tailwindcss": "^2.0.2"
     },
     "dependencies": {
+        "clipboard": "^2.0.8",
         "moment": "^2.29.1",
         "pikaday": "^1.8.2"
     }

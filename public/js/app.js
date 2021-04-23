@@ -3802,12 +3802,15 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 __webpack_require__(/*! alpinejs */ "./node_modules/alpinejs/dist/alpine.js");
 
-__webpack_require__.e(/*! AMD require */ "node_modules_pikaday_pikaday_js").then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! pikaday */ "./node_modules/pikaday/pikaday.js")]; (function (Pikaday) {
-  var picker = new Pikaday({
-    field: document.getElementById('birth_date'),
-    format: 'DD.MM.YYYY'
-  });
-}).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}).catch(__webpack_require__.oe);
+__webpack_require__.e(/*! AMD require */ "node_modules_clipboard_dist_clipboard_js").then(function() { var __WEBPACK_AMD_REQUIRE_ARRAY__ = [__webpack_require__(/*! clipboard */ "./node_modules/clipboard/dist/clipboard.js")]; (function (ClipboardJS) {
+  new ClipboardJS('.btn');
+}).apply(null, __WEBPACK_AMD_REQUIRE_ARRAY__);}).catch(__webpack_require__.oe); // require(['pikaday'], function (Pikaday) {
+//     var picker = new Pikaday(
+//         { 
+//             field: document.getElementById('birth_date'),
+//             format: 'DD.MM.YYYY' 
+//         });
+// });
 
 /***/ }),
 
@@ -21343,7 +21346,7 @@ process.umask = function() { return 0; };
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "node_modules_pikaday_pikaday_js") return "js/" + chunkId + ".js";
+/******/ 			if (chunkId === "node_modules_clipboard_dist_clipboard_js") return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

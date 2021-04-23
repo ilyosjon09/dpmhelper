@@ -35,7 +35,7 @@ class PinflController extends Controller
         ];
 
         $region_filter = $request->query('region', 0) == 0 ? null : $regions[$request->query('region', 0)];
-        $birth_date_filter = ["birth_date", "=", $request->query('birth_date', null)];
+        $birth_date_filter = ["birth_date", "like", $request->query('birth_date', null)];
         $middle_name_filter = ["middlename_cyr", "like", '%' . $request->query('middle_name', '%')];
         $name_filter = ["name_cyr", "like", $request->query('name', '%') . "%"];
         $birth_place_filter = ["birth_place", '=', "АНДИЖОН ВИЛОЯТИ " . $region_filter];
